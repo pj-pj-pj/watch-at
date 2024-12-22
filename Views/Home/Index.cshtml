@@ -2,7 +2,25 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="background vh-100 d-flex flex-column justify-content-around align-items-center">
+    <div class="p-4 p-md-5 d-flex flex-column justify-content-center align-items-center align-items-md-start align-self-lg-start">
+        <img class="logo mx-auto" src="~/images/at-logo.png" alt="Adventure Time Logo" />
+        <span class="btn-group-sm mt-3 d-flex gap-2 flex-wrap justify-content-center align-items-center mx-auto">
+            <button class="btn btn-custom-primary rounded-pill px-4 py-2 position-relative">
+                <i class="bi bi-play" style="font-size: 2rem; position: absolute; left: 10px; top: 50%; transform: translateY(-50%);"></i>
+                <span class="ms-4">Play S1E1</span>
+            </button>
+            <button class="btn btn-custom-bordered rounded-pill px-4 py-2">
+                Continue Watching
+                <i class="bi bi-arrow-right" style="padding-left: 3px;"></i>
+            </button>             
+        </span>
+    </div>
+    <div class="custom-darkbg-opacity mt-auto w-100">
+        <p class="max-width-text">Follow the adventures of a boy named Finn the Human, and his best friend and adoptive brother Jake the Dog, who has magical powers to change shape and size at will.</p>
+        <button class="btn btn-custom-dark rounded-pill px-5 py-2" >
+            See All Seasons
+            <i class="bi bi-arrow-right" style="padding-left: 3px;"></i>
+        </button>
+    </div>
 </div>
