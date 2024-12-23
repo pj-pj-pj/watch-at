@@ -1,0 +1,27 @@
+﻿body {
+    background-image: url('/images/at-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.custom-darkbg-opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px 20px 35px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.max-width-text {
+    max-width: 600px; 
+    line-height: 1.5; 
+    word-wrap: break-word;
+}
+
+@media (min-width: 470px) {
+    .custom-darkbg-opacity {
+        display: block;
+    }
+}
