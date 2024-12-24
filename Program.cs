@@ -1,4 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using watch_at.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<watch_atContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("watch_atContext") ?? throw new InvalidOperationException("Connection string 'watch_atContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
